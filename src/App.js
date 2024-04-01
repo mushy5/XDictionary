@@ -20,6 +20,13 @@ function App() {
         else
           setMeaning('Word not found in the dictionary.');
       }
+      
+      setMeaning((prevWordMeaning) => {
+        if (prevWordMeaning === "") {
+          return "Word not found in the dictionary.";
+        }
+        return prevWordMeaning;
+      });
     }
 
   return (
