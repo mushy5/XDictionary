@@ -28,7 +28,7 @@ function App() {
      <input type='text' placeholder='Search for a word...' value={word} onChange={(e)=>{setWord(e.target.value)}}/>
      <button type='button' onClick={handleSearch}>Search</button>
      <h3>Definition:</h3>
-     {<p>{meaning}</p>}  
+     <p>{meaning}</p>  
     </div>
   );
 }
